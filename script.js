@@ -22,6 +22,7 @@ $(document).ready(function() {
     var ampm = amOrPm(h);
     color(m);
     backgroundColor(m);
+    FontSize(m);
     h = convertHours(h);
     h = checkTime(h);
     m = checkTime(m);
@@ -70,15 +71,15 @@ $(document).ready(function() {
   }
 }
 
-  var fontSize = ["12px", "14px"]
+  var fontSize = ["70px", "150px"]
 // $("body").css("font-size", fontSize[0])
 
   function FontSize(i) {
-    if (i % 5 === 0) {
-      $("body").css({ fontSize: fontSize[0]});
+    if (i % 2 === 0) {
+      $("#txt").css({ fontSize: fontSize[0]});
   }
     else {
-      $("body").css({ backgroundColor: "blue"});
+      $("#txt").css({ fontSize: fontSize[1]});
   }
 }
 
